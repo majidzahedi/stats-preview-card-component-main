@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Stats preview card component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							veryDarkBlue: "hsl(233, 47%, 7%)",
+							darkDesaturatedBlue: "hsl(244, 38%, 16%)",
+							softViolet: "hsl(277, 64%, 61%)",
+						},
+						fontFamily: {
+							sans: ["Inter", "sans-serif"],
+							lexend: ["Lexend Deca", "sans-serif"],
+						},
+					},
+				},
+			};
+		</script>
+		<style type="text/tailwindcss">
+			.attribution {
+				font-family:'lexend Deca', 'sans-serif';
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(277, 64%, 61%);
+			}
+			.filter-purple{
+				filter: brightness(61%) sepia(64%) hue-rotate(227deg) saturate(650%) contrast(85%)  ;
+			}
+			
+		</style>
+	</head>
+	<body class="relative">
+		<main
+			class="flex py-16 lg:py-0 items-center justify-center bg-veryDarkBlue text-white min-h-screen"
+		>
+			<div
+				class="bg-darkDesaturatedBlue mx-6 items-center justify-between flex max-w-sm flex-col-reverse overflow-hidden rounded-md bg- lg:max-w-[1100px] lg:flex-row"
+			>
+				<div
+					class="flex flex-col  space-y-10 lg:space-y-[80px] py-10 lg:py-12 px-4 lg:px-16 lg:w-1/2 lg:items-start"
+				>
+					<div class="flex-col items-center space-y-[30px]">
+						<h1 class="text-center text-3xl lg:text-4xl text-white lg:text-start font-bold">
+							Get
+							<spnan class="text-softViolet">insights</spnan> that help your
+							business grow.
+						</h1>
+						<p
+							class="text-center lg:px-0 px-3 lg:max-w-sm lg:text-[15px] text-white/75 lg:text-start"
+						>
+							Discover the benefits of data analytics and make better decision
+							regarding revenue, customer experince, and over all efficiency.
+						</p>
+					</div>
+					<div
+						class="flex w-full flex-col items-center lg:space-x-[60px] space-y-8 text-white/50 lg:flex-row lg:space-y-0"
+					>
+						<div>
+							<h2
+								class="text-center text-2xl font-bold text-white lg:text-start"
+							>
+								10k+
+							</h2>
+							<p class="text-[15px] uppercase text-white/60 font-lexend">
+								companies
+							</p>
+						</div>
+						<div>
+							<h2
+								class="text-center text-2xl font-bold text-white lg:text-start"
+							>
+								314
+							</h2>
+							<p class="text-[15px] uppercase text-white/60 font-lexend">
+								templates
+							</p>
+						</div>
+						<div>
+							<h2
+								class="text-center text-2xl font-bold text-white lg:text-start"
+							>
+								12M+
+							</h2>
+							<p class="text-[15px] uppercase text-white/60 font-lexend">
+								queries
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-1/2 flex justify-end">
+					<img
+						src="/images/image-header-desktop.jpg"
+						alt=""
+						class="lg:block hidden filter-purple"
+					/>
+					<img
+						src="/images/image-header-mobile.jpg"
+						alt=""
+						class="lg:hidden block filter-purple"
+					/>
+				</div>
+			</div>
+
+      <footer class="hidden lg:absolute attribution bottom-5 ">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="http://github.com/majidzahedi" target="_blank">Majid Zahedi</a>.
+      </footer>
+		</main>
+	</body>
+</html>
