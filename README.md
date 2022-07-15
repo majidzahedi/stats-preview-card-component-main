@@ -23,22 +23,20 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktokj](./screenshot.jpg)
 
 | Dekstop View                                                          | Moblie View                                                         |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | ![](./screenshots/desktopview.png)                       | ![Dark Mode](./screenshots/mobielview.png)                       |
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/majidzahedi/stats-preview-card-component-main)
+- Live Site URL: [netlify](https://62d19903a9a73842b5335972--sparkly-sunflower-d47312.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Flexbox
-- Mobile-first workflow
 - [TailwindCSS](http://tailwindcss.com/) - For styles
 
 ## Author
